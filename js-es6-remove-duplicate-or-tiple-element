@@ -1,0 +1,12 @@
+let stg = 'banana';
+
+let stgSeparate = stg.split("");
+console.log('stgSeparate---'+stgSeparate);
+
+//1 Set - remove all elements duplicate or triplicate
+let newStgSet = [...new Set(stgSeparate)];
+console.log('newStgSet---'+newStgSet);
+
+//2 Filter
+let newStgFilter = stgSeparate.filter((item,index) => stgSeparate.indexOf(item)=== index);
+console.log('newStgFilter-----'+newStgFilter);
